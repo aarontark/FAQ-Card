@@ -25,3 +25,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: workSansRegular;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+}
+
+.faq-card {
+    z-index: 1; 
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
