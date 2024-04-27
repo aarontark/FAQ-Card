@@ -5,5 +5,19 @@
     --dark-purple: hsl(292, 42%, 14%);
 }
 
+@font-face {
+    font-family: workSansBold;
+    src: url('./assets/fonts/static/WorkSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: workSansRegular;
+    src: url('./assets/fonts/static/WorkSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: workSansSemi;
+    src: url('./assets/fonts/static/WorkSans-SemiBold.ttf');
+}
 
 
