@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: workSansRegular;
+    justify-content: space-around;
     align-items: center;
     background: var(--light-pink);
     color: var(--dark-purple);
@@ -44,16 +45,35 @@ body {
 .faq-card {
     z-index: 1;
     background-color: var(--white);
-    width: 85%;
-    padding: 1rem;
+    width: 87.5%;
+    padding: 1.5rem;
 }
+
+/* FAQ title section */
 
 .title-section {
     display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon {
+    width: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: workSansBold;
+}
+
+.question-section {
+    border-bottom: 2px solid rgba(177, 177, 177, 0.336);
 }
 
 .question-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .answer {
