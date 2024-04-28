@@ -30,7 +30,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: workSansRegular;
-    justify-content: space-around;
     align-items: center;
     background: var(--light-pink);
     color: var(--dark-purple);
@@ -40,16 +39,20 @@ body {
 .background-img {
     position: absolute;
     top: 0;
+    width: 100%;
 }
 
 .faq-card {
     z-index: 1;
     background-color: var(--white);
     width: 87.5%;
-    padding: 1.5rem;
+    max-width: 32.375rem;
+    margin-top: 8.75rem;
+    border-radius: .5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
-/* FAQ title section */
+/* title + icon */
 
 .title-section {
     display: flex;
@@ -58,7 +61,7 @@ body {
 }
 
 .icon {
-    width: 1.5rem;
+    width: 1.75rem;
 }
 
 .title {
@@ -66,19 +69,39 @@ body {
     font-family: workSansBold;
 }
 
+/* questions and answers */
+
 .question-section {
-    border-bottom: 2px solid rgba(177, 177, 177, 0.336);
+    border-bottom: 2px solid var(--light-pink);
 }
 
 .question-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+}
+
+.question {
+    font-size: 1rem;
+    font-family: workSansSemi;
+    padding: 1.5rem 0;
 }
 
 .answer {
     opacity: 0;
     height: 0;
+}
+
+.answer-expanded {
+    font-size: .9rem;
+    line-height: 1.3rem;
+    color: var(--grayish-purple);
+    padding: 0 .25rem 1rem 0;
+}
+
+.last {
+    border: none;
 }
 
 .attribution {
