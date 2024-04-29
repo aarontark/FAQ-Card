@@ -36,10 +36,17 @@ body {
     height: 100vh;
 }
 
-.background-img {
+.background-img-mobile {
+    width: 100%;
     position: absolute;
     top: 0;
+}
+
+.background-img-desktop {
     width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
 }
 
 .faq-card {
@@ -107,4 +114,43 @@ body {
 .attribution {
     position: absolute;
     bottom: 0;
+}
+
+/* desktop view */
+
+@media all and (min-width: 768px) {
+    .background-img-mobile {
+        display: none;
+    }
+
+    .background-img-desktop {
+        display: block;
+    }
+
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq-card {
+        margin: 0;
+        padding: 2rem 2.25rem .5rem 2.25rem;
+        max-width: 34rem;
+    }
+
+    .icon {
+        width: 2rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .answer-expanded {
+        padding-bottom: 1.5rem;
+    }
+
+    .attribution {
+        font-size: 1rem;
+    }
 }
